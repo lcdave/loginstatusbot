@@ -1,5 +1,5 @@
 var fs = require('fs');
-const token = fs.readFileSync('./A15666_t650641.txt').toString().split("\n");
+const token = process.env.TOKEN;
 const TelegramBot = require('node-telegram-bot-api');
 const bot = new TelegramBot(token, {polling: true});
 
