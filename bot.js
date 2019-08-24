@@ -12,6 +12,6 @@ bot.onText(/\/login/, (msg) => {
 
 bot.onText(/\/logout/, (msg) => {
 	bot.sendMessage(msg.chat.id, '✅✅✅✅ NOBODY IS PLAYING RIGHT NOW ✅✅✅✅').then((m) => {
-		bot.pinChatMessage(-1001448364430, m.message_id);
+		bot.pinChatMessage(m.chat.id, m.message_id);
 	});
 });
