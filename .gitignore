@@ -1,2 +1,6 @@
 # IGNORE FILE
 A15666_t650641.txt
+/node_modules
+npm-debug.log
+.DS_Store
+/.env
